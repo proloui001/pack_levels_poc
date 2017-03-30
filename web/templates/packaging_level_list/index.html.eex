@@ -1,0 +1,28 @@
+<h2>Listing packaging level lists</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>List</th>
+      <th>Name</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for packaging_level_list <- @packaging_level_lists do %>
+    <tr>
+      <td><%= packaging_level_list.list_id %></td>
+      <td><%= packaging_level_list.name %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: packaging_level_list_path(@conn, :show, packaging_level_list), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: packaging_level_list_path(@conn, :edit, packaging_level_list), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: packaging_level_list_path(@conn, :delete, packaging_level_list), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New packaging level list", to: packaging_level_list_path(@conn, :new) %>

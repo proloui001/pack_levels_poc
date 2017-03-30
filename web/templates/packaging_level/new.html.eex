@@ -1,0 +1,6 @@
+<h2>New packaging level</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: packaging_level_path(@conn, :create) %>
+
+<%= link "Back", to: packaging_level_path(@conn, :index) %>

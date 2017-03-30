@@ -1,0 +1,6 @@
+<h2>Edit packaging level list</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: packaging_level_list_path(@conn, :update, @packaging_level_list) %>
+
+<%= link "Back", to: packaging_level_list_path(@conn, :index) %>
