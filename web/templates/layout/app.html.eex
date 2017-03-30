@@ -17,10 +17,12 @@
 
     <div class="container">
       <nav>
-    <div class="nav-wrapper  light-blue darken-4">
-      <a href="/" class="brand-logo right"><i class="material-icons">cloud</i> Optel Cloud</a>
+    <div class="nav-wrapper indigo">
+      <a href="/" class="brand-logo right orange-text"><i class="material-icons">cloud</i> Optel Cloud</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="badges.html"><i class="material-icons right">lock</i>Log in</a></li>
         <li><a href="/packaging_levels">Packaging Levels</a></li>
+        <li><a href="/packaging_level_lists">Packaging Level List</a></li>
       </ul>
     </div>
   </nav>

@@ -5,6 +5,7 @@ defmodule PocPacklevels.PackagingLevelList do
     field :list_id, :string
     field :name, :string
 
+    has_many :packaging_levels, PocPacklevels.PackagingLevel
     timestamps()
   end
 
