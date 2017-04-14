@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :poc_packlevels, PocPacklevels.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "ast23hh",
   database: "poc_packlevels_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

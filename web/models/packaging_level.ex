@@ -6,7 +6,7 @@ defmodule PocPacklevels.PackagingLevel do
     field :name, :string
     field :children_count, :integer
     field :parent_id, :string
-    belongs_to :packaging_level_list, PocPacklevels.PackagingLevelList
+    #belongs_to :packaging_level_list, PocPacklevels.PackagingLevelList
     timestamps()
   end
 
